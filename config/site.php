@@ -30,6 +30,17 @@ $welcomeMessage = [
     ],
 ];
 
+$aboutNexusTopics = [
+    'Artificial Intelligence',
+    'Computing',
+    'Cyber Security',
+    'Biotechnology',
+    'Sustainable Infrastructure',
+    'Advanced Communication Technologies',
+    'Renewable Energy',
+    'Smart Manufacturing',
+];
+
 $aboutCollege = [
     'title' => 'About PACE',
     'paragraphs' => [
