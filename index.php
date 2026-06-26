@@ -107,12 +107,39 @@ require __DIR__ . '/Components/Hero.php';
 
     <section class="section section--college pace-college" id="pace">
         <div class="pace-college__split">
-            <div
-                class="pace-college__visual"
-                style="background-image: url('<?= asset_url('Assets/Images/pacebg.png') ?>');"
-                role="img"
-                aria-label="P. A. College of Engineering campus"
-            ></div>
+            <?php
+            $carouselImages = $paceCarouselImages !== [] ? $paceCarouselImages : ['Assets/Images/pacebg.png'];
+            ?>
+            <div class="pace-college__visual pace-carousel" aria-label="P. A. College of Engineering campus photos">
+                <div class="pace-carousel__track">
+                    <?php foreach ($carouselImages as $index => $image): ?>
+                        <div class="pace-carousel__slide<?= $index === 0 ? ' is-active' : '' ?>">
+                            <img
+                                src="<?= asset_url($image) ?>"
+                                alt="P. A. College of Engineering campus photo <?= $index + 1 ?>"
+                                width="960"
+                                height="640"
+                                loading="<?= $index === 0 ? 'eager' : 'lazy' ?>"
+                            >
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <?php if (count($carouselImages) > 1): ?>
+                    <div class="pace-carousel__dots" role="tablist" aria-label="Campus photo navigation">
+                        <?php foreach ($carouselImages as $index => $image): ?>
+                            <button
+                                type="button"
+                                class="pace-carousel__dot<?= $index === 0 ? ' is-active' : '' ?>"
+                                role="tab"
+                                aria-label="Show photo <?= $index + 1 ?>"
+                                aria-selected="<?= $index === 0 ? 'true' : 'false' ?>"
+                                data-slide="<?= $index ?>"
+                            ></button>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+            </div>
 
             <div class="pace-college__body">
                 <div class="pace-college__header">
@@ -138,7 +165,7 @@ require __DIR__ . '/Components/Hero.php';
                 </div>
 
                 <ul class="pace-college__highlights" aria-label="Institution highlights">
-                    <li>A++ NAAC Accredited</li>
+                    <li>A NAAC Accredited</li>
                     <li>7 Undergraduate Programs</li>
                     <li>Research &amp; Innovation Focus</li>
                 </ul>
@@ -152,14 +179,10 @@ require __DIR__ . '/Components/Hero.php';
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">Sponsored by</h2>
-                <p class="section__lead">Partner logos and sponsor details will be updated soon.</p>
             </div>
 
             <div class="sponsors-grid">
                 <div class="sponsor-card">Sponsor details coming soon</div>
-                <div class="sponsor-card">P. A. Educational Trust</div>
-                <div class="sponsor-card">IEEE</div>
-                <div class="sponsor-card">Industry Partners</div>
             </div>
         </div>
     </section>

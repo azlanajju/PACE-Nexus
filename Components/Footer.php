@@ -37,32 +37,38 @@ $footerAbout = 'PACE NEXUS, initiated by P. A. College of Engineering, unites ac
         <section class="footer__block footer__block--contacts">
             <h2 class="footer__heading">Contacts</h2>
             <ul class="footer__contact-list">
-                <li class="footer__contact-item">
+                <li class="footer__contact-item footer__contact-item--venue">
                     <span class="footer__contact-icon" aria-hidden="true">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-4.35 7-10a7 7 0 10-14 0c0 5.65 7 10 7 10z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="11" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
                     </span>
                     <span><?= htmlspecialchars($site['venue'], ENT_QUOTES, 'UTF-8') ?></span>
                 </li>
-                <?php if (!empty($site['phones'])): ?>
-                    <li class="footer__contact-item">
-                        <span class="footer__contact-icon" aria-hidden="true">
+            </ul>
+
+            <div class="footer__contact-cards">
+                <?php foreach ($footerContacts as $contact): ?>
+                    <a
+                        href="tel:<?= htmlspecialchars(preg_replace('/\s+/', '', $contact['phone']), ENT_QUOTES, 'UTF-8') ?>"
+                        class="footer__contact-card"
+                    >
+                        <span class="footer__contact-card__icon" aria-hidden="true">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v3a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
                         </span>
-                        <span>
-                            <?php foreach ($site['phones'] as $i => $phone): ?>
-                                <?php if ($i > 0): ?><br><?php endif; ?>
-                                <a href="tel:<?= htmlspecialchars(preg_replace('/\s+/', '', $phone), ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars($phone, ENT_QUOTES, 'UTF-8') ?></a>
-                            <?php endforeach; ?>
+                        <span class="footer__contact-card__body">
+                            <strong class="footer__contact-name"><?= htmlspecialchars($contact['name'], ENT_QUOTES, 'UTF-8') ?></strong>
+                            <span class="footer__contact-role"><?= htmlspecialchars($contact['role'], ENT_QUOTES, 'UTF-8') ?></span>
+                            <span class="footer__contact-phone"><?= htmlspecialchars($contact['phone'], ENT_QUOTES, 'UTF-8') ?></span>
                         </span>
-                    </li>
-                <?php endif; ?>
-                <li class="footer__contact-item">
-                    <span class="footer__contact-icon" aria-hidden="true">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-                    </span>
-                    <a href="mailto:<?= htmlspecialchars($site['email'], ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars($site['email'], ENT_QUOTES, 'UTF-8') ?></a>
-                </li>
-            </ul>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+
+            <a href="mailto:<?= htmlspecialchars($site['email'], ENT_QUOTES, 'UTF-8') ?>" class="footer__email-link">
+                <span class="footer__contact-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                </span>
+                <?= htmlspecialchars($site['email'], ENT_QUOTES, 'UTF-8') ?>
+            </a>
         </section>
 
         <section class="footer__block footer__block--pace-group">
@@ -86,6 +92,57 @@ $footerAbout = 'PACE NEXUS, initiated by P. A. College of Engineering, unites ac
         </section>
     </div>
 
+    <div class="footer__info">
+        <div class="container footer__info-grid">
+            <section class="footer__info-block">
+                <h2 class="footer__heading">Location</h2>
+                <p class="footer__info-text"><?= htmlspecialchars($site['location'], ENT_QUOTES, 'UTF-8') ?></p>
+                <a
+                    href="https://maps.app.goo.gl/m8vqSZYPK9NHu5iT6"
+                    class="footer__info-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View on Google Maps
+                </a>
+            </section>
+
+            <section class="footer__info-block">
+                <h2 class="footer__heading">Visitor Guide</h2>
+                <ul class="footer__info-links">
+                    <?php foreach ($visitorGuideLinks as $link): ?>
+                        <li>
+                            <a
+                                href="<?= htmlspecialchars($link['href'], ENT_QUOTES, 'UTF-8') ?>"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <?= htmlspecialchars($link['label'], ENT_QUOTES, 'UTF-8') ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </section>
+
+            <section class="footer__info-block footer__info-block--credit">
+                <p class="footer__credit-label"><?= htmlspecialchars($siteCredit['label'], ENT_QUOTES, 'UTF-8') ?></p>
+                <a
+                    href="<?= page_url($siteCredit['page']) ?>"
+                    class="footer__credit-logo-wrap"
+                >
+                    <img
+                        src="<?= asset_url($siteCredit['logo']) ?>"
+                        alt="<?= htmlspecialchars($siteCredit['name'], ENT_QUOTES, 'UTF-8') ?>"
+                        class="footer__credit-logo"
+                        width="220"
+                        height="60"
+                        loading="lazy"
+                    >
+                </a>
+            </section>
+        </div>
+    </div>
+
     <div class="footer__bottom">
         <div class="container footer__bottom-inner">
             <p>Copyright &copy; <?= date('Y') ?> <?= htmlspecialchars($site['short_name'], ENT_QUOTES, 'UTF-8') ?>. All Rights Reserved.</p>
@@ -94,6 +151,7 @@ $footerAbout = 'PACE NEXUS, initiated by P. A. College of Engineering, unites ac
     </div>
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="<?= asset_url('Assets/js/main.js') ?>"></script>
 </body>
 </html>

@@ -59,5 +59,7 @@ require __DIR__ . '/Components/Head.php';
     </footer>
 </div>
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="<?= asset_url('Assets/js/main.js') ?>"></script>
 </body>
 </html>

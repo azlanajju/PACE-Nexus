@@ -12,12 +12,21 @@ $site = [
     'location' => 'P. A. College of Engineering, Mangaluru, India - 574153, Karnataka, India.',
     'ieee_record' => 'XXXX',
     'email' => 'pacenexus2027@pace.edu.in',
-    'phones' => [
-        '+91 9986096513',
-        '+91 8884975771',
-    ],
     'base_path' => rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '')), '/'),
     'assets' => 'Assets',
+];
+
+$footerContacts = [
+    [
+        'name' => 'Dr. Asif Hassan',
+        'role' => 'Professor & Head, Dept. of ECE',
+        'phone' => '+91 8884975771',
+    ],
+    [
+        'name' => 'Dr. Shareefraju J. Ukkund',
+        'role' => 'Associate Professor, Dept. of BT',
+        'phone' => '+91 9986096513',
+    ],
 ];
 
 $defaultPeopleImage = 'Assets/Images/default-people.png';
@@ -45,7 +54,7 @@ $aboutCollege = [
     'title' => 'About PACE',
     'paragraphs' => [
         'P.A. College of Engineering (PACE) offers undergraduate programs in seven engineering disciplines, postgraduate programs in MBA, and Ph.D. programs in Engineering, Management, & Basic Sciences.',
-        'The institution is accredited by the National Assessment and Accreditation Council with an A++ Grade. The Mechanical Engineering, Computer Science & Engineering, Electronics & Communication Engineering, and Biotechnology programs are accredited by the National Board of Accreditation. Committed to fostering research and innovation, PACE has established two incubation centres and secured research grants worth over 24 crores in recent years. The institute has a vibrant research culture, with several faculty members actively engaged in research, including scholars recognized among the top 2% most-cited researchers worldwide by Stanford University.',
+        'The institution is accredited by the National Assessment and Accreditation Council with an A Grade. The Mechanical Engineering, Computer Science & Engineering, Electronics & Communication Engineering, and Biotechnology programs are accredited by the National Board of Accreditation. Committed to fostering research and innovation, PACE has established two incubation centres and secured research grants worth over 24 crores in recent years. The institute has a vibrant research culture, with several faculty members actively engaged in research, including scholars recognized among the top 2% most-cited researchers worldwide by Stanford University.',
     ],
 ];
 
@@ -68,73 +77,73 @@ $importantDates = [
 ];
 
 $organizingChairs = [
-    ['name' => 'Dr. Shareefraju J. Ukkund', 'role' => 'Associate Professor, Dept. of BT'],
-    ['name' => 'Dr. Asif Hassan', 'role' => 'Professor & Head, Dept. of ECE'],
+    ['name' => 'Dr. Shareefraju J. Ukkund', 'role' => 'Associate Professor, Dept. of BT', 'image' => 'Assets/Images/People/shareefraju-ukkund.jpeg'],
+    ['name' => 'Dr. Asif Hassan', 'role' => 'Professor & Head, Dept. of ECE', 'image' => 'Assets/Images/People/asif-hassan.jpg'],
 ];
 
 $committeeSections = [
     [
         'title' => 'Chief Patron',
         'members' => [
-            ['name' => 'Mr. Abdullah Ibrahim', 'role' => 'Managing Trustee, P. A. Educational Trust(R) Member, Governing Council, PACE.'],
+            ['name' => 'Mr. Abdullah Ibrahim', 'role' => 'Managing Trustee, P. A. Educational Trust(R) Member, Governing Council, PACE.', 'image' => 'Assets/Images/People/abdullah-ibrahim.jpg'],
         ],
     ],
     [
         'title' => 'Patrons',
         'members' => [
-            ['name' => 'Mr. Zubair Ibrahim', 'role' => 'Trustee, P. A. Educational Trust(R) Member, Governing Council, PACE'],
-            ['name' => 'Mr. Ameen Ibrahim', 'role' => 'Trustee, P. A. Educational Trust(R) Member, Governing Council, PACE'],
-            ['name' => 'Dr. S. Vidyashankar', 'role' => 'Vice Chancellor, VTU'],
-            ['name' => 'Dr. Prasad B Rampure', 'role' => 'Registrar, VTU'],
+            ['name' => 'Mr. Zubair Ibrahim', 'role' => 'Trustee, P. A. Educational Trust(R) Member, Governing Council, PACE', 'image' => 'Assets/Images/People/zubair-ibrahim.jpeg'],
+            ['name' => 'Mr. Ameen Ibrahim', 'role' => 'Trustee, P. A. Educational Trust(R) Member, Governing Council, PACE', 'image' => 'Assets/Images/People/ameen-ibrahim.png'],
+            ['name' => 'Dr. S. Vidyashankar', 'role' => 'Vice Chancellor, VTU', 'image' => 'Assets/Images/People/s-vidyashankar.jpg'],
+            ['name' => 'Dr. Prasad B Rampure', 'role' => 'Registrar, VTU', 'image' => 'Assets/Images/People/prasad-b-rampure.jpg'],
         ],
     ],
     [
         'title' => 'Advisory Committee',
         'members' => [
-            ['name' => 'Prof. Joao Crespo', 'role' => 'Director of ITQB, NOVA University of Lisbon, Portugal'],
-            ['name' => 'Mr. Shaheen Nasaruddin', 'role' => 'Director, Information Security, Santander USA'],
-            ['name' => 'Dr. Jaby Mohammed', 'role' => 'Professor, Illinois State University, USA'],
-            ['name' => 'Mr. Azim Siddique', 'role' => 'Global Solutions Architect, Amazon Web Services, Chicago Illinois USA'],
-            ['name' => 'Dr. Syed Usman Taqui', 'role' => 'Dean of Biology and Environment Science & Engineering, KAUST, Saudi Arabia'],
+            ['name' => 'Prof. Joao Crespo', 'role' => 'Director of ITQB, NOVA University of Lisbon, Portugal', 'image' => 'Assets/Images/People/joao-crespo.jpg'],
+            ['name' => 'Mr. Shaheen Nasaruddin', 'role' => 'Director, Information Security, Santander USA', 'image' => 'Assets/Images/People/shaheen-nasaruddin.png'],
+            ['name' => 'Dr. Jaby Mohammed', 'role' => 'Professor, Illinois State University, USA', 'image' => 'Assets/Images/People/jaby-mohammed.jpg'],
+            ['name' => 'Mr. Azim Siddique', 'role' => 'Global Solutions Architect, Amazon Web Services, Chicago Illinois USA', 'image' => 'Assets/Images/People/azim-siddique.png'],
+            ['name' => 'Dr. Syed Usman Taqui', 'role' => 'Dean of Biology and Environment Science & Engineering, KAUST, Saudi Arabia', 'image' => 'Assets/Images/People/syed-usman-taqui.png'],
             ['name' => 'Mr. Shiras Valappil', 'role' => 'Director, Kloske Ventures Pty Ltd | ABS Solutions Pty Ltd | India Advisory Committee, University of Newcastle, New Zealand'],
-            ['name' => 'Mr. Omar Sinaph', 'role' => 'President - PVS Nolwood, Inc USA, Managing Director - PVS Chemicals Belgium'],
-            ['name' => 'Dr. S. A. Khan', 'role' => 'Professor, IIUM, Kuala Lumpur, Malaysia'],
+            ['name' => 'Mr. Omar Sinaph', 'role' => 'President - PVS Nolwood, Inc USA, Managing Director - PVS Chemicals Belgium', 'image' => 'Assets/Images/People/omar-sinaph.png'],
+            ['name' => 'Dr. S. A. Khan', 'role' => 'Professor, IIUM, Kuala Lumpur, Malaysia', 'image' => 'Assets/Images/People/s-a-khan.png'],
         ],
     ],
     [
         'title' => 'General Chair',
         'members' => [
-            ['name' => 'Dr Ramis M. K.', 'role' => 'Principal, P. A. College of Engineering, Mangalore'],
+            ['name' => 'Dr Ramis M. K.', 'role' => 'Principal, P. A. College of Engineering, Mangalore', 'image' => 'Assets/Images/People/ramis-m-k.jpg'],
         ],
     ],
     [
         'title' => 'Organizing Chairs',
         'members' => [
-            ['name' => 'Dr. Asif Hassan', 'role' => 'Professor & Head, Dept. of ECE'],
-            ['name' => 'Dr. Shareefraju J Ukkund', 'role' => 'Associate Professor, Dept. of BT'],
+            ['name' => 'Dr. Asif Hassan', 'role' => 'Professor & Head, Dept. of ECE', 'image' => 'Assets/Images/People/asif-hassan.jpg'],
+            ['name' => 'Dr. Shareefraju J Ukkund', 'role' => 'Associate Professor, Dept. of BT', 'image' => 'Assets/Images/People/shareefraju-ukkund.jpeg'],
         ],
     ],
     [
         'title' => 'Organizing Secretary',
         'members' => [
-            ['name' => 'Dr. Mohammed Zakir B.', 'role' => 'Associate Professor & Head, Dept. of AIML'],
+            ['name' => 'Dr. Mohammed Zakir B.', 'role' => 'Associate Professor & Head, Dept. of AIML', 'image' => 'Assets/Images/People/mohammed-zakir.png'],
         ],
     ],
     [
         'title' => 'Program Chairs',
         'members' => [
-            ['name' => 'Dr. Sharmila Kumari', 'role' => 'Technical Program Committee Chair — Vice Principal, Professor & Head, Department of CSE, PACE, Mangalore'],
-            ['name' => 'Krishna Prasad N.', 'role' => 'Registration Chair — Professor & Head, Dept. of BT'],
-            ['name' => 'Dr Prashanth Pai', 'role' => 'Finance & Sponsorship Chair — Associate Professor & Head, Dept. of ME'],
-            ['name' => 'Mr. Afsar Baig', 'role' => 'Publication Chair'],
-            ['name' => 'Dr. Saleem Malik', 'role' => 'Publication Chair'],
-            ['name' => 'Dr. Abdul Razak', 'role' => 'Publication Chair'],
+            ['name' => 'Dr. Sharmila Kumari', 'role' => 'Technical Program Committee Chair — Vice Principal, Professor & Head, Department of CSE, PACE, Mangalore', 'image' => 'Assets/Images/People/sharmila-kumari.jpg'],
+            ['name' => 'Krishna Prasad N.', 'role' => 'Registration Chair — Professor & Head, Dept. of BT', 'image' => 'Assets/Images/People/krishna-prasad.jpeg'],
+            ['name' => 'Dr Prashanth Pai', 'role' => 'Finance & Sponsorship Chair — Associate Professor & Head, Dept. of ME', 'image' => 'Assets/Images/People/prashanth-pai.png'],
+            ['name' => 'Mr. Afsar Baig', 'role' => 'Publication Chair', 'image' => 'Assets/Images/People/afsar-baig.png'],
+            ['name' => 'Dr. Saleem Malik', 'role' => 'Publication Chair', 'image' => 'Assets/Images/People/saleem-malik.png'],
+            ['name' => 'Dr. Abdul Razak', 'role' => 'Publication Chair', 'image' => 'Assets/Images/People/abdul-razak.png'],
             ['name' => 'Mrs. Shainy Mathew', 'role' => 'Publication Chair'],
-            ['name' => 'Dr. Palakshappa', 'role' => 'Publicity Chair'],
-            ['name' => 'Mr. Habeeb Ur Rehman P. B.', 'role' => 'Publicity Chair'],
+            ['name' => 'Dr. Palakshappa', 'role' => 'Publicity Chair', 'image' => 'Assets/Images/People/palakshappa.jpg'],
+            ['name' => 'Mr. Habeeb Ur Rehman P. B.', 'role' => 'Publicity Chair', 'image' => 'Assets/Images/People/Habeeb-ur-rahman.png'],
             ['name' => 'Dr. Zoheb Ali', 'role' => 'Hospitality & Accommodation Committee'],
             ['name' => 'Mrs. Safa Sanah', 'role' => 'Hospitality & Accommodation Committee'],
-            ['name' => 'Mrs. Laila Jaseela A.', 'role' => 'Hospitality & Accommodation Committee'],
+            ['name' => 'Mrs. Laila Jaseela A.', 'role' => 'Hospitality & Accommodation Committee', 'image' => 'Assets/Images/People/laila-jaseela.png'],
         ],
     ],
 ];
@@ -257,6 +266,34 @@ $paceGroup = [
     'description' => 'PACE Group is an international educational organization that operates various institutions and schools across diverse fields, dedicated to providing quality education and empowering students for a successful future.',
 ];
 
+$visitorGuideLinks = [
+    ['label' => 'Maps Location', 'href' => 'https://maps.app.goo.gl/m8vqSZYPK9NHu5iT6'],
+    ['label' => 'Explore Mangalore', 'href' => 'https://www.karnatakatourism.org/destinations/mangaluru/'],
+    ['label' => 'Where to Stay', 'href' => 'https://www.booking.com/city/in/mangalore.html'],
+];
+
+$siteCredit = [
+    'label' => 'Website Designed & Developed by',
+    'name' => 'Intelex Solutions',
+    'logo' => 'Assets/Images/IntelexSolutions.png',
+    'page' => 'intelex-solutions.php',
+];
+
+$intelexSolutions = [
+    'name' => 'Intelex Solutions',
+    'tagline' => 'Premium software development services in Mangalore.',
+    'description' => 'Web development, mobile apps, AI integration, cloud solutions, and digital services for businesses worldwide.',
+    'logo' => 'Assets/Images/IntelexSolutions.png',
+    'website' => 'http://intelexsolutions.co.in/',
+    'email' => 'info@intelexsolutions.in',
+    'phones' => [
+        // '+91 9972826383',
+        '+91 6361557581',
+        '+91 8867575821',
+    ],
+    'location' => 'Mangalore, Karnataka, India - 575001',
+];
+
 function asset_url(string $path): string
 {
     global $site;
@@ -266,6 +303,33 @@ function asset_url(string $path): string
 
     return $base . '/' . $normalized;
 }
+
+function pace_carousel_images(): array
+{
+    $dir = __DIR__ . '/../Assets/Images/PACE';
+
+    if (!is_dir($dir)) {
+        return [];
+    }
+
+    $images = [];
+
+    foreach (scandir($dir) as $file) {
+        if ($file === '.' || $file === '..') {
+            continue;
+        }
+
+        if (preg_match('/\.(?:png|jpe?g|webp|gif)$/i', $file)) {
+            $images[] = 'Assets/Images/PACE/' . $file;
+        }
+    }
+
+    sort($images, SORT_NATURAL | SORT_FLAG_CASE);
+
+    return $images;
+}
+
+$paceCarouselImages = pace_carousel_images();
 
 function page_url(string $path): string
 {
