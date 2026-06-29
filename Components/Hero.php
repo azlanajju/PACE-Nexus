@@ -30,29 +30,21 @@ declare(strict_types=1);
             data-aos-easing="ease-out-cubic"
         >
 
-        <p
-            class="hero__eyebrow"
-            data-aos="fade-up"
-            data-aos-delay="150"
-            data-aos-duration="700"
-            data-aos-easing="ease-out-cubic"
-        ><?= htmlspecialchars($site['ieee_cosponsor'], ENT_QUOTES, 'UTF-8') ?></p>
-
         <h1
             class="hero__title"
             data-aos="fade-up"
-            data-aos-delay="250"
+            data-aos-delay="150"
             data-aos-duration="700"
             data-aos-easing="ease-out-cubic"
         ><?= htmlspecialchars($site['name'], ENT_QUOTES, 'UTF-8') ?></h1>
 
         <p
-            class="hero__subtitle"
+            class="hero__cosponsor"
             data-aos="fade-up"
-            data-aos-delay="350"
+            data-aos-delay="250"
             data-aos-duration="700"
             data-aos-easing="ease-out-cubic"
-        ><?= htmlspecialchars($site['tagline'], ENT_QUOTES, 'UTF-8') ?></p>
+        ><?= htmlspecialchars($site['ieee_cosponsor'], ENT_QUOTES, 'UTF-8') ?></p>
 
         <div class="hero__meta">
             <div

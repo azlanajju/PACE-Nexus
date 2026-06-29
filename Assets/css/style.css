@@ -326,29 +326,23 @@ a {
     filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3));
 }
 
-.hero__eyebrow {
-    margin: 0 0 0.75rem;
-    font-size: 0.9rem;
-    letter-spacing: 0.18em;
+.hero__cosponsor {
+    margin: 0 auto 2rem;
+    max-width: 760px;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.78);
+    color: rgba(255, 255, 255, 0.82);
     font-weight: 600;
 }
 
 .hero__title {
-    margin: 0 0 1rem;
+    margin: 0 0 0.75rem;
     font-size: clamp(2.2rem, 5vw, 4rem);
     line-height: 1.08;
     font-weight: 800;
     letter-spacing: -0.03em;
     color: var(--color-white);
-}
-
-.hero__subtitle {
-    margin: 0 auto 2rem;
-    max-width: 760px;
-    font-size: clamp(1rem, 2.2vw, 1.2rem);
-    color: rgba(255, 255, 255, 0.88);
 }
 
 .hero__meta {
