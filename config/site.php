@@ -157,10 +157,7 @@ $committeeSections = [
 ];
 
 $speakers = [
-    ['name' => 'Chief Guest', 'role' => 'Details will be announced soon'],
-    ['name' => 'Keynote Speaker', 'role' => 'Details will be announced soon'],
-    ['name' => 'Keynote Speaker', 'role' => 'Details will be announced soon'],
-    ['name' => 'Invited Expert', 'role' => 'Details will be announced soon'],
+    ['name' => 'Mr. Brijesh Balakrishnan', 'role' => 'President, ITC Infotech', 'image' => 'Assets/Images/People/brijesh-balakrishnan.jpg'],
 ];
 
 $cfpTracks = [

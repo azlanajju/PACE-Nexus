@@ -19,12 +19,11 @@ require __DIR__ . '/Components/Navbar.php';
             <p>Keynote and invited speaker profiles for the conference.</p>
         </div>
 
-        <div class="maintenance-box">
-            <h2>Details are yet to be updated</h2>
-            <p>
-                Speaker information is currently under maintenance. Chief Guest, keynote speakers, and invited expert
-                profiles will be published here once finalized.
-            </p>
+        <div class="content-card">
+            <?php
+            $people = $speakers;
+            require __DIR__ . '/Components/PeopleGrid.php';
+            ?>
         </div>
     </div>
 </main>
