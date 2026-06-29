@@ -148,10 +148,9 @@ $committeeSections = [
             ['name' => 'Dr. Shamna N. V.', 'role' => 'Associate Professor & Head, Dept. of CSE-ICSB', 'image' => 'Assets/Images/People/shamna-n-v.jpg'],
             ['name' => 'Dr. Ronald Valder', 'role' => 'Associate Professor, Dept. of BT'],
             ['name' => 'Dr. Asia Hazareena', 'role' => 'Associate Professor, Dept. of ECE', 'image' => 'Assets/Images/People/asia-hazareena.png'],
-            ['name' => 'Mrs. Jameela', 'role' => 'Assistant Professor, Dept. of CV'],
+            ['name' => 'Dr. Saleem Malik', 'role' => 'Associate Professor, Dept. of CSE', 'image' => 'Assets/Images/People/saleem-malik.png'],
             ['name' => 'Dr. Abdul Razak', 'role' => 'Professor, Dept. of ME', 'image' => 'Assets/Images/People/abdul-razak.png'],
             ['name' => 'Dr. Mohammed Hafeez M. K.', 'role' => 'Associate Professor, Dept. of CSE', 'image' => 'Assets/Images/People/mohammed-hafeez.png'],
-            ['name' => 'Ms. Nazreen Aysha V. M.', 'role' => 'Assistant Professor, Dept. of AIML'],
         ],
     ],
 ];
