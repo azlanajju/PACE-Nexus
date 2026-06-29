@@ -157,6 +157,7 @@ $committeeSections = [
 
 $speakers = [
     ['name' => 'Mr. Brijesh Balakrishnan', 'role' => 'President, ITC Infotech', 'image' => 'Assets/Images/People/brijesh-balakrishnan.jpg'],
+    ['name' => 'Dr. Mohammed Misbahuddin', 'role' => "Scientist 'F' & Head, Trust, C-DAC Bangalore", 'image' => 'Assets/Images/People/Misbahuddin.png'],
 ];
 
 $cfpTracks = [
