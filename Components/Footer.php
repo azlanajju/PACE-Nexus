@@ -2,14 +2,15 @@
 
 declare(strict_types=1);
 
-$footerAbout = 'PACE NEXUS, initiated by P. A. College of Engineering, unites academia, industry, and research through international conferences. The conference focuses on next-generation technologies for energy, sustainability, and smart systems.';
+$footerAbout = 'PACE IEEE NEXUS, initiated by P. A. College of Engineering, unites academia, industry, and research through international conferences. The conference focuses on next-generation technologies for energy, sustainability, and smart systems.';
 ?>
 <footer class="site-footer">
     <div class="container footer__grid">
         <section class="footer__block footer__block--brand">
             <h2 class="footer__brand" aria-label="<?= htmlspecialchars($site['short_name'], ENT_QUOTES, 'UTF-8') ?>">
-                <span class="footer__brand-pace">PACE</span><span class="footer__brand-nexus">NEXUS</span>
+                <span class="footer__brand-pace">PACE IEEE</span><span class="footer__brand-nexus">NEXUS</span>
             </h2>
+            <p class="footer__brand-note"><?= htmlspecialchars($site['ieee_cosponsor'], ENT_QUOTES, 'UTF-8') ?></p>
             <p class="footer__about"><?= htmlspecialchars($footerAbout, ENT_QUOTES, 'UTF-8') ?></p>
             <div class="footer__social" aria-label="Social media links">
                 <?php foreach ($footerSocial as $social): ?>

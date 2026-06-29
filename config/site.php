@@ -3,8 +3,10 @@
 declare(strict_types=1);
 
 $site = [
-    'name' => 'PACE NEXUS 2027',
-    'short_name' => 'PACE NEXUS',
+    'name' => 'PACE IEEE NEXUS - 2027',
+    'short_name' => 'PACE IEEE NEXUS',
+    'year' => '2027',
+    'ieee_cosponsor' => 'Technically Co-Sponsored by IEEE',
     'tagline' => 'International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems - 2027',
     'dates' => '29 - 30 April 2027',
     'dates_detail' => '(Thursday & Friday)',
@@ -32,10 +34,10 @@ $footerContacts = [
 $defaultPeopleImage = 'Assets/Images/default-people.png';
 
 $welcomeMessage = [
-    'title' => 'Welcome to PACE NEXUS 2027',
+    'title' => 'Welcome to PACE IEEE NEXUS - 2027',
     'paragraphs' => [
-        'PACE NEXUS 2027 is a premier international conference dedicated to advancing research and innovation in next-generation technologies, sustainable engineering, and intelligent systems. The conference aims to provide a dynamic platform for researchers, academicians, industry professionals, innovators, and students to exchange ideas, present cutting-edge research, and foster interdisciplinary collaborations.',
-        'The conference emphasizes emerging technologies that address global challenges related to sustainability, clean energy, digital transformation, smart infrastructure, healthcare, and industrial innovation. Through keynote lectures, technical sessions, panel discussions, and networking opportunities, PACE NEXUS 2027 seeks to inspire transformative solutions for a sustainable and technologically advanced future.',
+        'PACE IEEE NEXUS - 2027 is a premier international conference dedicated to advancing research and innovation in next-generation technologies, sustainable engineering, and intelligent systems. The conference aims to provide a dynamic platform for researchers, academicians, industry professionals, innovators, and students to exchange ideas, present cutting-edge research, and foster interdisciplinary collaborations.',
+        'The conference emphasizes emerging technologies that address global challenges related to sustainability, clean energy, digital transformation, smart infrastructure, healthcare, and industrial innovation. Through keynote lectures, technical sessions, panel discussions, and networking opportunities, PACE IEEE NEXUS - 2027 seeks to inspire transformative solutions for a sustainable and technologically advanced future.',
     ],
 ];
 
@@ -135,15 +137,21 @@ $committeeSections = [
             ['name' => 'Dr. Sharmila Kumari', 'role' => 'Technical Program Committee Chair — Vice Principal, Professor & Head, Department of CSE, PACE, Mangalore', 'image' => 'Assets/Images/People/sharmila-kumari.jpg'],
             ['name' => 'Krishna Prasad N.', 'role' => 'Registration Chair — Professor & Head, Dept. of BT', 'image' => 'Assets/Images/People/krishna-prasad.jpeg'],
             ['name' => 'Dr Prashanth Pai', 'role' => 'Finance & Sponsorship Chair — Associate Professor & Head, Dept. of ME', 'image' => 'Assets/Images/People/prashanth-pai.png'],
-            ['name' => 'Mr. Afsar Baig', 'role' => 'Publication Chair', 'image' => 'Assets/Images/People/afsar-baig.png'],
-            ['name' => 'Dr. Saleem Malik', 'role' => 'Publication Chair', 'image' => 'Assets/Images/People/saleem-malik.png'],
-            ['name' => 'Dr. Abdul Razak', 'role' => 'Publication Chair', 'image' => 'Assets/Images/People/abdul-razak.png'],
-            ['name' => 'Mrs. Shainy Mathew', 'role' => 'Publication Chair'],
             ['name' => 'Dr. Palakshappa', 'role' => 'Publicity Chair', 'image' => 'Assets/Images/People/palakshappa.jpg'],
-            ['name' => 'Mr. Habeeb Ur Rehman P. B.', 'role' => 'Publicity Chair', 'image' => 'Assets/Images/People/Habeeb-ur-rahman.png'],
+            ['name' => 'Mr. Afsar Baig', 'role' => 'Publication Chair', 'image' => 'Assets/Images/People/afsar-baig.png'],
             ['name' => 'Dr. Zoheb Ali', 'role' => 'Hospitality & Accommodation Committee'],
-            ['name' => 'Mrs. Safa Sanah', 'role' => 'Hospitality & Accommodation Committee'],
-            ['name' => 'Mrs. Laila Jaseela A.', 'role' => 'Hospitality & Accommodation Committee', 'image' => 'Assets/Images/People/laila-jaseela.png'],
+        ],
+    ],
+    [
+        'title' => 'Technical Program Committee Chairs',
+        'members' => [
+            ['name' => 'Dr. Shamna N. V.', 'role' => 'Associate Professor & Head, Dept. of CSE-ICSB', 'image' => 'Assets/Images/People/shamna-n-v.jpg'],
+            ['name' => 'Dr. Ronald Valder', 'role' => 'Associate Professor, Dept. of BT'],
+            ['name' => 'Dr. Asia Hazareena', 'role' => 'Associate Professor, Dept. of ECE', 'image' => 'Assets/Images/People/asia-hazareena.png'],
+            ['name' => 'Mrs. Jameela', 'role' => 'Assistant Professor, Dept. of CV'],
+            ['name' => 'Dr. Abdul Razak', 'role' => 'Professor, Dept. of ME', 'image' => 'Assets/Images/People/abdul-razak.png'],
+            ['name' => 'Dr. Mohammed Hafeez M. K.', 'role' => 'Associate Professor, Dept. of CSE', 'image' => 'Assets/Images/People/mohammed-hafeez.png'],
+            ['name' => 'Ms. Nazreen Aysha V. M.', 'role' => 'Assistant Professor, Dept. of AIML'],
         ],
     ],
 ];

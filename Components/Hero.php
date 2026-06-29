@@ -20,7 +20,7 @@ declare(strict_types=1);
 
     <div class="hero__content container">
         <img
-            src="<?= asset_url('Assets/Images/pacenexuslogo_white.png') ?>"
+            src="<?= asset_url('Assets/Images/pacenexuslogo_dark.png') ?>"
             alt="<?= htmlspecialchars($site['short_name'], ENT_QUOTES, 'UTF-8') ?>"
             class="hero__logo"
             width="220"
@@ -36,7 +36,7 @@ declare(strict_types=1);
             data-aos-delay="150"
             data-aos-duration="700"
             data-aos-easing="ease-out-cubic"
-        >International Conference</p>
+        ><?= htmlspecialchars($site['ieee_cosponsor'], ENT_QUOTES, 'UTF-8') ?></p>
 
         <h1
             class="hero__title"

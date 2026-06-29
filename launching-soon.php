@@ -25,6 +25,7 @@ require __DIR__ . '/Components/Head.php';
         >
 
         <span class="launching-soon__badge">Launching Soon</span>
+        <p class="launching-soon__ieee"><?= htmlspecialchars($site['ieee_cosponsor'], ENT_QUOTES, 'UTF-8') ?></p>
 
         <h1 class="launching-soon__title"><?= htmlspecialchars($site['name'], ENT_QUOTES, 'UTF-8') ?></h1>
         <p class="launching-soon__tagline"><?= htmlspecialchars($site['tagline'], ENT_QUOTES, 'UTF-8') ?></p>

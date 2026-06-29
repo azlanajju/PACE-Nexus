@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config/site.php';
 
 $pageTitle = 'Paper Submission';
-$pageDescription = 'Paper Submission Guidelines — PACE NEXUS 2027';
+$pageDescription = 'Paper Submission Guidelines — PACE IEEE NEXUS - 2027';
 $bodyClass = 'page-submission';
 
 require __DIR__ . '/Components/Head.php';
@@ -41,7 +41,7 @@ require __DIR__ . '/Components/Navbar.php';
                     <li class="step-list__item">
                         <span class="step-list__number">1</span>
                         <div class="step-list__content">
-                            <?= htmlspecialchars($site['short_name'], ENT_QUOTES, 'UTF-8') ?> 2027 will follow a <strong>double-blind review process</strong>. All submitted papers will be judged based on their quality, presentation, and relevance. Authors must preserve anonymity of submission.
+                            <?= htmlspecialchars($site['name'], ENT_QUOTES, 'UTF-8') ?> will follow a <strong>double-blind review process</strong>. All submitted papers will be judged based on their quality, presentation, and relevance. Authors must preserve anonymity of submission.
                         </div>
                     </li>
                     <li class="step-list__item">

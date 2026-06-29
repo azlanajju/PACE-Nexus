@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config/site.php';
 
 $pageTitle = $site['name'];
-$pageDescription = 'PACE NEXUS 2027 — International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems at P. A. College of Engineering, Mangaluru.';
+$pageDescription = 'PACE IEEE NEXUS - 2027 — International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems at P. A. College of Engineering, Mangaluru.';
 $bodyClass = 'page-home';
 
 require __DIR__ . '/Components/Head.php';
@@ -33,13 +33,13 @@ require __DIR__ . '/Components/Hero.php';
                 <div class="about-showcase__brand">
                     <div class="about-logo-card">
                         <img
-                            src="<?= asset_url('Assets/Images/pacenexuslogo_dark.png') ?>"
+                            src="<?= asset_url('Assets/Images/pacenexuslogo_white.png') ?>"
                             alt="<?= htmlspecialchars($site['short_name'], ENT_QUOTES, 'UTF-8') ?>"
                             class="about-logo-card__image"
                             width="320"
                             height="120"
                         >
-                        <p class="about-logo-card__tagline">International Conference <?= htmlspecialchars(substr($site['name'], -4), ENT_QUOTES, 'UTF-8') ?></p>
+                        <p class="about-logo-card__tagline"><?= htmlspecialchars($site['ieee_cosponsor'], ENT_QUOTES, 'UTF-8') ?></p>
                     </div>
                 </div>
 
@@ -182,7 +182,16 @@ require __DIR__ . '/Components/Hero.php';
             </div>
 
             <div class="sponsors-grid">
-                <div class="sponsor-card">Sponsor details coming soon</div>
+                <div class="sponsor-card sponsor-card--logo">
+                    <img
+                        src="<?= asset_url('Assets/Images/ieee.png') ?>"
+                        alt="IEEE"
+                        class="sponsor-card__logo"
+                        width="200"
+                        height="80"
+                        loading="lazy"
+                    >
+                </div>
             </div>
         </div>
     </section>

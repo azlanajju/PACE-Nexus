@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config/site.php';
 
 $pageTitle = 'Contact';
-$pageDescription = 'Contact — PACE NEXUS 2027';
+$pageDescription = 'Contact — PACE IEEE NEXUS - 2027';
 $bodyClass = 'page-contact';
 
 require __DIR__ . '/Components/Head.php';

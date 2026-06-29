@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config/site.php';
 
 $pageTitle = 'Call for Papers';
-$pageDescription = 'Call for Papers — PACE NEXUS 2027';
+$pageDescription = 'Call for Papers — PACE IEEE NEXUS - 2027';
 $bodyClass = 'page-cfp';
 
 require __DIR__ . '/Components/Head.php';

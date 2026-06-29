@@ -116,6 +116,7 @@
         '.footer__bottom-inner': 'fade-up',
         '.launching-soon__logo': 'zoom-in',
         '.launching-soon__badge': 'fade-up',
+        '.launching-soon__ieee': 'fade-up',
         '.launching-soon__title': 'fade-up',
         '.launching-soon__tagline': 'fade-up',
         '.launching-soon__meta-item': 'fade-up',

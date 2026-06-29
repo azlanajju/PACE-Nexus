@@ -1102,6 +1102,20 @@ a {
     box-shadow: var(--shadow-sm);
 }
 
+.sponsor-card--logo {
+    border-style: solid;
+    color: inherit;
+}
+
+.sponsor-card__logo {
+    display: block;
+    max-width: min(200px, 100%);
+    max-height: 72px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
 /* Page layouts */
 .page-hero {
     padding: 1.5rem 0 2rem;
@@ -1806,6 +1820,15 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
+.footer__brand-note {
+    margin: -0.35rem 0 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-teal);
+}
+
 .footer__heading {
     margin: 0 0 0.85rem;
     font-size: 0.82rem;
@@ -2379,6 +2402,16 @@ a {
     background: var(--color-mint);
     box-shadow: 0 0 10px var(--color-mint);
     animation: launching-pulse 2s ease-in-out infinite;
+}
+
+.launching-soon__ieee {
+    margin: -0.65rem 0 1rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.82);
+    animation: launching-fade-up 0.7s ease 0.15s both;
 }
 
 .launching-soon__title {
