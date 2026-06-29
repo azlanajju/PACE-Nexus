@@ -1770,6 +1770,7 @@ a {
     font-size: 0.85rem;
     line-height: 1.5;
     color: var(--color-muted);
+    white-space: pre-line;
 }
 
 /* Footer */

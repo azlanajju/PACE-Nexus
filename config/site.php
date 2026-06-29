@@ -158,6 +158,7 @@ $committeeSections = [
 $speakers = [
     ['name' => 'Mr. Brijesh Balakrishnan', 'role' => 'President, ITC Infotech', 'image' => 'Assets/Images/People/brijesh-balakrishnan.jpg'],
     ['name' => 'Dr. Mohammed Misbahuddin', 'role' => "Scientist 'F' & Head, Trust, C-DAC Bangalore", 'image' => 'Assets/Images/People/Misbahuddin.png'],
+    ['name' => 'Mr. Khadeer Peer Shariff', 'role' => "Managing Director, Siraj Holdings International\nExecutive Chairman, Novac G.\nExecutive Director & CEO, Gibraltar Technologies", 'image' => 'Assets/Images/People/shariff.png'],
 ];
 
 $cfpTracks = [
