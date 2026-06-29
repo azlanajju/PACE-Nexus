@@ -156,7 +156,7 @@ $committeeSections = [
 ];
 
 $speakers = [
-    ['name' => 'Dr. Syed Usman Taqui', 'role' => 'Division of Biological and Environmental Science and Engineering, King Abdullah University of Science and Technology, Saudi Arabia', 'image' => 'Assets/Images/People/syed-usman-taqui.png'],
+    ['name' => 'Dr. Syed Usman Taqui', 'role' => 'Division of Biological and Environmental Science and Engineering, King Abdullah University of Science and Technology, Saudi Arabia', 'image' => 'Assets/Images/People/usman.png'],
     ['name' => 'Mr. Khadeer Peer Shariff', 'role' => "Managing Director, Siraj Holdings International\nExecutive Chairman, Novac G.\nExecutive Director & CEO, Gibraltar Technologies Dubai", 'image' => 'Assets/Images/People/shariff.png'],
     ['name' => 'Mr. Brijesh Balakrishnan', 'role' => 'President, ITC Infotech', 'image' => 'Assets/Images/People/brijesh-balakrishnan.jpg'],
     ['name' => 'Dr. Mohammed Misbahuddin', 'role' => "Scientist 'F' & Head, Trust, C-DAC Bangalore", 'image' => 'Assets/Images/People/Misbahuddin.png'],
