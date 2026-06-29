@@ -139,7 +139,7 @@ $committeeSections = [
             ['name' => 'Dr Prashanth Pai', 'role' => 'Finance & Sponsorship Chair — Associate Professor & Head, Dept. of ME', 'image' => 'Assets/Images/People/prashanth-pai.png'],
             ['name' => 'Dr. Palakshappa', 'role' => 'Publicity Chair', 'image' => 'Assets/Images/People/palakshappa.jpg'],
             ['name' => 'Mr. Afsar Baig', 'role' => 'Publication Chair', 'image' => 'Assets/Images/People/afsar-baig.png'],
-            ['name' => 'Dr. Zoheb Ali', 'role' => 'Hospitality & Accommodation Committee'],
+            ['name' => 'Dr. Zoheb Ali', 'role' => 'Hospitality & Accommodation Committee', 'image' => 'Assets/Images/People/zoheb-ali.png'],
         ],
     ],
     [
