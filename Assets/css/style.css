@@ -327,7 +327,7 @@ a {
 }
 
 .hero__cosponsor {
-    margin: 0 auto 2rem;
+    margin: 0 auto 0.85rem;
     max-width: 760px;
     font-size: clamp(0.95rem, 2vw, 1.1rem);
     letter-spacing: 0.08em;
@@ -343,6 +343,13 @@ a {
     font-weight: 800;
     letter-spacing: -0.03em;
     color: var(--color-white);
+}
+
+.hero__subtitle {
+    margin: 0 auto 2rem;
+    max-width: 760px;
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
+    color: rgba(255, 255, 255, 0.88);
 }
 
 .hero__meta {

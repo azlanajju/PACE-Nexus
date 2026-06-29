@@ -46,6 +46,14 @@ declare(strict_types=1);
             data-aos-easing="ease-out-cubic"
         ><?= htmlspecialchars($site['ieee_cosponsor'], ENT_QUOTES, 'UTF-8') ?></p>
 
+        <p
+            class="hero__subtitle"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-duration="700"
+            data-aos-easing="ease-out-cubic"
+        ><?= htmlspecialchars($site['tagline'], ENT_QUOTES, 'UTF-8') ?></p>
+
         <div class="hero__meta">
             <div
                 class="hero__meta-item"
