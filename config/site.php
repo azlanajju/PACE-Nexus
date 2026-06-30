@@ -20,14 +20,14 @@ $site = [
 
 $footerContacts = [
     [
-        'name' => 'Dr. Asif Hassan',
-        'role' => 'Professor & Head, Dept. of ECE',
+        'name' => 'Dr. Shareefraju J. Ukkund',
+        'role' => 'Associate Professor, Dept. of BT',
         'phone' => '+91 8884975771',
     ],
     [
-        'name' => 'Dr. Shareefraju J. Ukkund',
-        'role' => 'Associate Professor, Dept. of BT',
-        'phone' => '+91 9986096513',
+        'name' => 'Dr. Asif Hassan',
+        'role' => 'Professor & Head, Dept. of ECE',
+        'phone' => '+91 974374694',
     ],
 ];
 
@@ -121,8 +121,8 @@ $committeeSections = [
     [
         'title' => 'Organizing Chairs',
         'members' => [
-            ['name' => 'Dr. Asif Hassan', 'role' => 'Professor & Head, Dept. of ECE', 'image' => 'Assets/Images/People/asif-hassan.jpg'],
             ['name' => 'Dr. Shareefraju J Ukkund', 'role' => 'Associate Professor, Dept. of BT', 'image' => 'Assets/Images/People/shareefraju-ukkund.jpeg'],
+            ['name' => 'Dr. Asif Hassan', 'role' => 'Professor & Head, Dept. of ECE', 'image' => 'Assets/Images/People/asif-hassan.jpg'],
         ],
     ],
     [
