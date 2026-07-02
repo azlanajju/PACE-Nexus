@@ -3,16 +3,15 @@
 declare(strict_types=1);
 
 $site = [
-    'name' => 'PACE IEEE NEXUS - 2027',
-    'short_name' => 'PACE IEEE NEXUS',
+    'name' => 'PACE NEXUS 2027',
+    'short_name' => 'PACE NEXUS',
     'year' => '2027',
-    'ieee_cosponsor' => 'Technically Co-Sponsored by IEEE',
     'tagline' => 'International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems - 2027',
     'dates' => '29 - 30 April 2027',
     'dates_detail' => '(Thursday & Friday)',
     'venue' => 'P. A. College of Engineering, Mangaluru, India',
     'location' => 'P. A. College of Engineering, Mangaluru, India - 574153, Karnataka, India.',
-    'ieee_record' => 'XXXX',
+    'conference_record' => 'XXXX',
     'email' => 'pacenexus2027@pace.edu.in',
     'base_path' => rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '')), '/'),
     'assets' => 'Assets',
@@ -34,10 +33,10 @@ $footerContacts = [
 $defaultPeopleImage = 'Assets/Images/default-people.png';
 
 $welcomeMessage = [
-    'title' => 'Welcome to PACE IEEE NEXUS - 2027',
+    'title' => 'Welcome to PACE NEXUS 2027',
     'paragraphs' => [
-        'PACE IEEE NEXUS - 2027 is a premier international conference dedicated to advancing research and innovation in next-generation technologies, sustainable engineering, and intelligent systems. The conference aims to provide a dynamic platform for researchers, academicians, industry professionals, innovators, and students to exchange ideas, present cutting-edge research, and foster interdisciplinary collaborations.',
-        'The conference emphasizes emerging technologies that address global challenges related to sustainability, clean energy, digital transformation, smart infrastructure, healthcare, and industrial innovation. Through keynote lectures, technical sessions, panel discussions, and networking opportunities, PACE IEEE NEXUS - 2027 seeks to inspire transformative solutions for a sustainable and technologically advanced future.',
+        'PACE NEXUS 2027 is a premier international conference dedicated to advancing research and innovation in next-generation technologies, sustainable engineering, and intelligent systems. The conference aims to provide a dynamic platform for researchers, academicians, industry professionals, innovators, and students to exchange ideas, present cutting-edge research, and foster interdisciplinary collaborations.',
+        'The conference emphasizes emerging technologies that address global challenges related to sustainability, clean energy, digital transformation, smart infrastructure, healthcare, and industrial innovation. Through keynote lectures, technical sessions, panel discussions, and networking opportunities, PACE NEXUS 2027 seeks to inspire transformative solutions for a sustainable and technologically advanced future.',
     ],
 ];
 
@@ -247,9 +246,9 @@ $registrationPolicies = [
 $registrationFees = [
     ['type' => 'Regular Author (Industry)', 'indian' => 'INR 9,000', 'foreign' => 'USD 300'],
     ['type' => 'Regular Author (Academia)', 'indian' => 'INR 7,000', 'foreign' => 'USD 250'],
-    ['type' => 'IEEE Author', 'indian' => 'INR 6,500', 'foreign' => 'USD 200'],
+    ['type' => 'Member Author', 'indian' => 'INR 6,500', 'foreign' => 'USD 200'],
     ['type' => 'Student Author', 'indian' => 'INR 6,000', 'foreign' => 'USD 200'],
-    ['type' => 'IEEE Student Author', 'indian' => 'INR 5,500', 'foreign' => 'USD 200'],
+    ['type' => 'Member Student Author', 'indian' => 'INR 5,500', 'foreign' => 'USD 200'],
     ['type' => 'Regular Attendee', 'indian' => 'INR 2,000', 'foreign' => 'USD 150'],
     ['type' => 'Student Attendee', 'indian' => 'INR 1,500', 'foreign' => 'USD 100'],
 ];

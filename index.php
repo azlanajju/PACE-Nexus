@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config/site.php';
 
 $pageTitle = $site['name'];
-$pageDescription = 'PACE IEEE NEXUS - 2027 — International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems at P. A. College of Engineering, Mangaluru.';
+$pageDescription = 'PACE NEXUS 2027 — International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems at P. A. College of Engineering, Mangaluru.';
 $bodyClass = 'page-home';
 
 require __DIR__ . '/Components/Head.php';
@@ -39,7 +39,7 @@ require __DIR__ . '/Components/Hero.php';
                             width="320"
                             height="120"
                         >
-                        <p class="about-logo-card__tagline"><?= htmlspecialchars($site['ieee_cosponsor'], ENT_QUOTES, 'UTF-8') ?></p>
+                        <p class="about-logo-card__tagline">International Conference <?= htmlspecialchars($site['year'], ENT_QUOTES, 'UTF-8') ?></p>
                     </div>
                 </div>
 
@@ -72,12 +72,12 @@ require __DIR__ . '/Components/Hero.php';
                             By fostering interdisciplinary collaboration between academia and industry, the conference seeks to promote
                             innovative solutions that address global challenges related to energy, sustainability, digital transformation,
                             and engineering excellence. The conference aligns with the United Nations Sustainable Development Goals (SDGs)
-                            and IEEE&rsquo;s mission of advancing technology for humanity.
+                            and the mission of advancing technology for humanity.
                         </p>
                     </div>
 
-                    <span class="ieee-badge">
-                        IEEE Xplore Digital Library &mdash; Conference Record #<?= htmlspecialchars($site['ieee_record'], ENT_QUOTES, 'UTF-8') ?>
+                    <span class="publication-badge">
+                        Digital Library &mdash; Conference Record #<?= htmlspecialchars($site['conference_record'], ENT_QUOTES, 'UTF-8') ?>
                     </span>
                 </div>
             </div>
@@ -89,16 +89,16 @@ require __DIR__ . '/Components/Hero.php';
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 016.5 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" stroke="currentColor" stroke-width="1.8"/></svg>
                         </div>
                         <div class="about-highlight__titles">
-                            <p class="about-highlight__label">IEEE Xplore Digital Library</p>
+                            <p class="about-highlight__label">Digital Library</p>
                             <h3>Publication &amp; Presentation</h3>
                         </div>
                     </div>
                     <p class="about-highlight__text">
-                        All accepted and presented papers will be submitted for possible publication in the IEEE Xplore Digital Library,
-                        through the IEEE Conference Publication Program (CPP).
+                        All accepted and presented papers will be submitted for possible publication in the Digital Library,
+                        through the Conference Publication Program (CPP).
                     </p>
                     <p class="about-highlight__record">
-                        Conference Record #<?= htmlspecialchars($site['ieee_record'], ENT_QUOTES, 'UTF-8') ?>
+                        Conference Record #<?= htmlspecialchars($site['conference_record'], ENT_QUOTES, 'UTF-8') ?>
                     </p>
                 </div>
             </aside>
@@ -174,27 +174,6 @@ require __DIR__ . '/Components/Hero.php';
     </section>
 
     <?php require __DIR__ . '/Components/ImportantDates.php'; ?>
-
-    <section class="section section--sponsors" id="sponsors">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Sponsored by</h2>
-            </div>
-
-            <div class="sponsors-grid">
-                <div class="sponsor-card sponsor-card--logo">
-                    <img
-                        src="<?= asset_url('Assets/Images/ieee.png') ?>"
-                        alt="IEEE"
-                        class="sponsor-card__logo"
-                        width="200"
-                        height="80"
-                        loading="lazy"
-                    >
-                </div>
-            </div>
-        </div>
-    </section>
 </main>
 
 <?php require __DIR__ . '/Components/Footer.php'; ?>

@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config/site.php';
 
 $pageTitle = 'Paper Submission';
-$pageDescription = 'Paper Submission Guidelines — PACE IEEE NEXUS - 2027';
+$pageDescription = 'Paper Submission Guidelines — PACE NEXUS 2027';
 $bodyClass = 'page-submission';
 
 require __DIR__ . '/Components/Head.php';
@@ -47,8 +47,8 @@ require __DIR__ . '/Components/Navbar.php';
                     <li class="step-list__item">
                         <span class="step-list__number">2</span>
                         <div class="step-list__content">
-                            Accepted and presented papers will be submitted for possible publication in the IEEE Xplore Digital Library
-                            (Conference Record #<?= htmlspecialchars($site['ieee_record'], ENT_QUOTES, 'UTF-8') ?>). Manuscripts must adhere to the standard IEEE two-column format and must not exceed 6 pages.
+                            Accepted and presented papers will be submitted for possible publication in the Digital Library
+                            (Conference Record #<?= htmlspecialchars($site['conference_record'], ENT_QUOTES, 'UTF-8') ?>). Manuscripts must adhere to the standard two-column format and must not exceed 6 pages.
                         </div>
                     </li>
                     <li class="step-list__item">
@@ -56,14 +56,14 @@ require __DIR__ . '/Components/Navbar.php';
                         <div class="step-list__content">
                             Typesetting instructions and sample templates:
                             <a href="https://www.ieee.org/conferences/publishing/templates" class="info-link" target="_blank" rel="noopener noreferrer">
-                                IEEE Manuscript Templates for Conference Proceedings
+                                Manuscript Templates for Conference Proceedings
                             </a>
                         </div>
                     </li>
                     <li class="step-list__item">
                         <span class="step-list__number">4</span>
                         <div class="step-list__content">
-                            The Camera Ready Copy (CRC) of every accepted paper will be subjected to similarity check using IEEE CrossCheck and Prohibited Authors List (PAL).
+                            The Camera Ready Copy (CRC) of every accepted paper will be subjected to similarity check using CrossCheck and Prohibited Authors List (PAL).
                         </div>
                     </li>
                 </ol>

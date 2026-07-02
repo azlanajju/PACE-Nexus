@@ -39,17 +39,9 @@ declare(strict_types=1);
         ><?= htmlspecialchars($site['name'], ENT_QUOTES, 'UTF-8') ?></h1>
 
         <p
-            class="hero__cosponsor"
-            data-aos="fade-up"
-            data-aos-delay="250"
-            data-aos-duration="700"
-            data-aos-easing="ease-out-cubic"
-        ><?= htmlspecialchars($site['ieee_cosponsor'], ENT_QUOTES, 'UTF-8') ?></p>
-
-        <p
             class="hero__subtitle"
             data-aos="fade-up"
-            data-aos-delay="350"
+            data-aos-delay="250"
             data-aos-duration="700"
             data-aos-easing="ease-out-cubic"
         ><?= htmlspecialchars($site['tagline'], ENT_QUOTES, 'UTF-8') ?></p>
@@ -58,7 +50,7 @@ declare(strict_types=1);
             <div
                 class="hero__meta-item"
                 data-aos="fade-up"
-                data-aos-delay="450"
+                data-aos-delay="350"
                 data-aos-duration="700"
                 data-aos-easing="ease-out-cubic"
             >
@@ -69,7 +61,7 @@ declare(strict_types=1);
             <div
                 class="hero__meta-item"
                 data-aos="fade-up"
-                data-aos-delay="550"
+                data-aos-delay="450"
                 data-aos-duration="700"
                 data-aos-easing="ease-out-cubic"
             >
@@ -81,7 +73,7 @@ declare(strict_types=1);
         <div
             class="hero__actions"
             data-aos="fade-up"
-            data-aos-delay="650"
+            data-aos-delay="550"
             data-aos-duration="700"
             data-aos-easing="ease-out-cubic"
         >
@@ -93,7 +85,7 @@ declare(strict_types=1);
     <div
         class="hero__scroll-wrap"
         data-aos="fade-up"
-        data-aos-delay="750"
+        data-aos-delay="650"
         data-aos-duration="700"
         data-aos-easing="ease-out-cubic"
     >
