@@ -78,8 +78,8 @@ $importantDates = [
 ];
 
 $organizingChairs = [
-    ['name' => 'Dr. Shareefraju J. Ukkund', 'role' => 'Associate Professor, Dept. of BT', 'image' => 'Assets/Images/People/shareefraju-ukkund.jpeg'],
-    ['name' => 'Dr. Asif Hassan', 'role' => 'Professor & Head, Dept. of ECE', 'image' => 'Assets/Images/People/asif-hassan.jpg'],
+    ['name' => 'Dr. Shareefraju J. Ukkund', 'role' => 'Associate Professor, Dept. of BT', 'image' => 'Assets/Images/People/shareefraju.jpeg'],
+    ['name' => 'Dr. Asif Hassan', 'role' => 'Professor & Head, Dept. of ECE', 'image' => 'Assets/Images/People/asifhassan.jpeg'],
 ];
 
 $committeeSections = [
@@ -106,7 +106,7 @@ $committeeSections = [
             ['name' => 'Dr. Jaby Mohammed', 'role' => 'Professor, Illinois State University, USA', 'image' => 'Assets/Images/People/jaby-mohammed.jpg'],
             ['name' => 'Mr. Azim Siddique', 'role' => 'Global Solutions Architect, Amazon Web Services, Chicago Illinois USA', 'image' => 'Assets/Images/People/azim-siddique.png'],
             ['name' => 'Dr. Syed Usman Taqui', 'role' => 'Dean of Biology and Environment Science & Engineering, KAUST, Saudi Arabia', 'image' => 'Assets/Images/People/syed-usman-taqui.png'],
-            ['name' => 'Mr. Shiras Valappil', 'role' => 'Director, Kloske Ventures Pty Ltd | ABS Solutions Pty Ltd | India Advisory Committee, University of Newcastle, New Zealand'],
+            ['name' => 'Mr. Shiras Valappil', 'role' => 'Director, Kloske Ventures Pty Ltd | ABS Solutions Pty Ltd | India Advisory Committee, University of Newcastle, New Zealand', 'image' => 'Assets/Images/People/Shiras.png'],
             ['name' => 'Mr. Omar Sinaph', 'role' => 'President - PVS Nolwood, Inc USA, Managing Director - PVS Chemicals Belgium', 'image' => 'Assets/Images/People/omar-sinaph.png'],
             ['name' => 'Dr. S. A. Khan', 'role' => 'Professor, IIUM, Kuala Lumpur, Malaysia', 'image' => 'Assets/Images/People/s-a-khan.png'],
         ],
@@ -120,25 +120,43 @@ $committeeSections = [
     [
         'title' => 'Organizing Chairs',
         'members' => [
-            ['name' => 'Dr. Shareefraju J Ukkund', 'role' => 'Associate Professor, Dept. of BT', 'image' => 'Assets/Images/People/shareefraju-ukkund.jpeg'],
-            ['name' => 'Dr. Asif Hassan', 'role' => 'Professor & Head, Dept. of ECE', 'image' => 'Assets/Images/People/asif-hassan.jpg'],
-        ],
-    ],
-    [
-        'title' => 'Organizing Secretary',
-        'members' => [
-            ['name' => 'Dr. Mohammed Zakir B.', 'role' => 'Associate Professor & Head, Dept. of AIML', 'image' => 'Assets/Images/People/mohammed-zakir.png'],
+            ['name' => 'Dr. Shareefraju J Ukkund', 'role' => 'Associate Professor, Dept. of BT', 'image' => 'Assets/Images/People/shareefraju.jpeg'],
+            ['name' => 'Dr. Asif Hassan', 'role' => 'Professor & Head, Dept. of ECE', 'image' => 'Assets/Images/People/asifhassan.jpeg'],
         ],
     ],
     [
         'title' => 'Program Chairs',
-        'members' => [
-            ['name' => 'Dr. Sharmila Kumari', 'role' => 'Technical Program Committee Chair — Vice Principal, Professor & Head, Department of CSE, PACE, Mangalore', 'image' => 'Assets/Images/People/sharmila-kumari.jpg'],
-            ['name' => 'Krishna Prasad N.', 'role' => 'Registration Chair — Professor & Head, Dept. of BT', 'image' => 'Assets/Images/People/krishna-prasad.jpeg'],
-            ['name' => 'Dr Prashanth Pai', 'role' => 'Finance & Sponsorship Chair — Associate Professor & Head, Dept. of ME', 'image' => 'Assets/Images/People/prashanth-pai.png'],
-            ['name' => 'Dr. Palakshappa', 'role' => 'Publicity Chair', 'image' => 'Assets/Images/People/palakshappa.jpg'],
-            ['name' => 'Mr. Afsar Baig', 'role' => 'Publication Chair', 'image' => 'Assets/Images/People/afsar-baig.png'],
-            ['name' => 'Dr. Zoheb Ali', 'role' => 'Hospitality & Accommodation Committee', 'image' => 'Assets/Images/People/zoheb-ali.png'],
+        'columns' => [
+            [
+                'title' => 'Technical Program Chairs',
+                'members' => [
+                    ['name' => 'Dr. Sharmila Kumari', 'role' => 'Technical Program Committee Chair - Vice Principal, Professor & Head, Department of CSE, PACE, Mangalore', 'image' => 'Assets/Images/People/sharmila-kumari.jpg'],
+                    ['name' => 'Dr. Mohammed Zakir B.', 'role' => 'Associate Professor & Head, Dept. of AIML, PACE, Mangalore', 'image' => 'Assets/Images/People/zakir.jpeg'],
+                    ['name' => 'Dr. Chengappaa Munjandira', 'role' => 'Chair-Elect 2026, IEEE Bangalore Section', 'image' => 'Assets/Images/People/chengappa-munjandira.jpg'],
+                    ['name' => 'Dr. Sathyanarayana S.V', 'role' => 'Vice Chair (Technical Activities), IEEE Bangalore Section', 'image' => 'Assets/Images/People/sathyanarayana-sv.jpeg'],
+                    ['name' => 'Dr. Parmeshachari B.D', 'role' => 'Execom Member, IEEE Bangalore Section', 'image' => 'Assets/Images/People/parameshachari-bd.jpeg'],
+                    ['name' => 'Dr. Mohit P. Tahiliani', 'role' => 'Execom Member, IEEE Bangalore Section', 'image' => 'Assets/Images/People/mohit-tahiliani.jpg'],
+                    ['name' => 'Dr. Sourav Kanti Addya', 'role' => 'Execom Member, IEEE Bangalore Section', 'image' => 'Assets/Images/People/sourav-kanti-addya.jpg'],
+                    ['name' => 'Dr. Vasudeva Acharya', 'role' => 'Execom Member, IEEE Bangalore Section', 'image' => 'Assets/Images/People/vasudeva-acharya.jpg'],
+                    ['name' => 'Dr. Venugopala P.S', 'role' => 'Chair, IEEE MSS - Professor, Dept. of AI & DS, NMAMIT Nitte', 'image' => 'Assets/Images/People/venugopala-ps.jpg'],
+                    ['name' => 'Dr. Harivinod N', 'role' => 'Secretary, IEEE MSS - Associate Professor, Dept. of CSE, SJEC, Mangalore', 'image' => 'Assets/Images/People/harivinod-n.png'],
+                    ['name' => 'Dr. Mustafa Basthikodi', 'role' => 'Professor & HoD-CSE, SCEM Mangalore - Execom Member, IEEE MSS', 'image' => 'Assets/Images/People/mustafa-basthikodi.jpg'],
+                    ['name' => 'Gurusiddya Hiremath', 'role' => 'Treasurer, IEEE MSS', 'image' => 'Assets/Images/People/gurusiddya-hiremath.jpg'],
+                    ['name' => 'Dr. Shyam Lal', 'role' => 'Past Chair, IEEE GRSS Bangalore Chapter - Associate Professor and Dean (Research), NITK, Surathkal', 'image' => 'Assets/Images/People/shyam-lal.jpg'],
+                    ['name' => 'Mr. Puneet Kumar Mishra', 'role' => 'Chair, IEEE AESS Bangalore Chapter - Board of Governor-at-large - Scientist/Engineer-SG, U R Rao Satellite Centre, Bangalore', 'image' => 'Assets/Images/People/puneet-kumar-mishra.jpg'],
+                    ['name' => 'Anindya Saha', 'role' => 'Vice President, Wireless, Tejas Networks, Bangalore - Execom Member, IEEE Bangalore Section', 'image' => 'Assets/Images/People/anindya-saha.jpg'],
+                ],
+            ],
+            [
+                'title' => 'Organizing Committee Chairs',
+                'members' => [
+                    ['name' => 'Krishna Prasad N.', 'role' => 'Registration Chair - Professor & Head, Dept. of BT', 'image' => 'Assets/Images/People/krishna-prasad.jpeg'],
+                    ['name' => 'Dr Prashanth Pai', 'role' => 'Finance & Sponsorship Chair - Associate Professor & Head, Dept. of ME', 'image' => 'Assets/Images/People/prashanth-pai.png'],
+                    ['name' => 'Dr. Palakshappa', 'role' => 'Publicity Chair', 'image' => 'Assets/Images/People/palakshappa.jpg'],
+                    ['name' => 'Mr. Afsar Baig', 'role' => 'Publication Chair', 'image' => 'Assets/Images/People/afsar-baig.png'],
+                    ['name' => 'Dr. Zoheb Ali', 'role' => 'Hospitality & Accommodation Committee', 'image' => 'Assets/Images/People/zoheb.jpeg'],
+                ],
+            ],
         ],
     ],
     [

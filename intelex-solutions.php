@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config/site.php';
 
 $pageTitle = 'Intelex Solutions';
-$pageDescription = 'Intelex Solutions — software development services in Mangalore.';
+$pageDescription = 'Intelex Solutions - software development services in Mangalore.';
 $bodyClass = 'page-intelex';
 
 require __DIR__ . '/Components/Head.php';

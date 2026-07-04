@@ -1154,6 +1154,41 @@ a {
     color: var(--color-primary);
 }
 
+.committee-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    align-items: start;
+}
+
+.committee-column + .committee-column {
+    margin-top: 2rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.content-card > h2 + .committee-columns {
+    margin-top: 1.25rem;
+}
+
+.committee-column h3 {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-size: 1.15rem;
+    color: var(--color-primary);
+}
+
+.committee-subsection {
+    margin-top: 2rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.committee-subsection h3 {
+    margin-bottom: 1.25rem;
+    font-size: 1.15rem;
+}
+
 .content-card ul {
     padding-left: 1.2rem;
 }

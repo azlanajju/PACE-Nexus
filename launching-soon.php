@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config/site.php';
 
 $pageTitle = 'Launching Soon';
-$pageDescription = $site['name'] . ' — Official website launching soon.';
+$pageDescription = $site['name'] . ' - Official website launching soon.';
 $bodyClass = 'page-launching';
 
 require __DIR__ . '/Components/Head.php';
