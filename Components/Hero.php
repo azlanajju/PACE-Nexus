@@ -65,7 +65,7 @@ declare(strict_types=1);
                 data-aos-duration="700"
                 data-aos-easing="ease-out-cubic"
             >
-                <span class="hero__meta-label">Location</span>
+                <span class="hero__meta-label">Venue</span>
                 <strong><?= htmlspecialchars($site['venue'], ENT_QUOTES, 'UTF-8') ?></strong>
             </div>
         </div>
