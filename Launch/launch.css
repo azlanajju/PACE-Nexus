@@ -1,0 +1,364 @@
+/* Launch ceremony — curtain reveal experience */
+
+.page-launch {
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #05070a;
+}
+
+.page-launch .site-header {
+    display: none;
+}
+
+.launch-stage {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.launch-hero {
+    padding-top: 4rem;
+    z-index: 1;
+}
+
+.launch-hero .hero__actions,
+.launch-hero .hero__scroll-wrap {
+    display: none;
+}
+
+.launch-stage.is-revealed .launch-hero {
+    animation: launch-hero-in 0.9s ease both;
+}
+
+@keyframes launch-hero-in {
+    from {
+        opacity: 0.65;
+        transform: scale(1.03);
+        filter: blur(4px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+/* Curtains */
+.curtains {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.curtain {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 52%;
+    overflow: hidden;
+    transition: transform 1.35s cubic-bezier(0.65, 0.05, 0.36, 1);
+    will-change: transform;
+}
+
+.curtain--left {
+    left: 0;
+    transform-origin: left center;
+    background:
+        linear-gradient(95deg, #06121f 0%, #0b2a3d 38%, #0e3d4f 72%, #082433 100%);
+    box-shadow: inset -18px 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.curtain--right {
+    right: 0;
+    transform-origin: right center;
+    background:
+        linear-gradient(265deg, #06121f 0%, #0b2a3d 38%, #0e3d4f 72%, #082433 100%);
+    box-shadow: inset 18px 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.curtain__fold {
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.035) 0,
+            rgba(255, 255, 255, 0.035) 10px,
+            rgba(0, 0, 0, 0.08) 10px,
+            rgba(0, 0, 0, 0.08) 22px
+        );
+    opacity: 0.85;
+}
+
+.curtain__shine {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        115deg,
+        transparent 20%,
+        rgba(0, 181, 226, 0.12) 48%,
+        transparent 72%
+    );
+}
+
+.curtain--left::after,
+.curtain--right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(
+        180deg,
+        rgba(38, 208, 124, 0.15),
+        rgba(0, 181, 226, 0.65),
+        rgba(38, 208, 124, 0.15)
+    );
+}
+
+.curtain--left::after {
+    right: 0;
+}
+
+.curtain--right::before {
+    left: 0;
+}
+
+.launch-stage.is-opening .curtain--left {
+    transform: translateX(-104%);
+}
+
+.launch-stage.is-opening .curtain--right {
+    transform: translateX(104%);
+}
+
+/* Intro panel over closed curtains */
+.launch-intro {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.25rem;
+    color: #fff;
+    transition: opacity 0.55s ease, visibility 0.55s ease, transform 0.55s ease;
+}
+
+.launch-stage.is-opening .launch-intro {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.96);
+    pointer-events: none;
+}
+
+.launch-intro__logo {
+    width: min(260px, 68vw);
+    margin-bottom: 1.35rem;
+    filter: drop-shadow(0 10px 28px rgba(0, 0, 0, 0.45));
+    animation: launch-float 3.2s ease-in-out infinite;
+}
+
+@keyframes launch-float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.launch-intro__eyebrow {
+    margin: 0 0 0.45rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.launch-intro__title {
+    margin: 0 0 0.65rem;
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.launch-intro__copy {
+    margin: 0 0 2rem;
+    max-width: 28rem;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 1.02rem;
+    line-height: 1.55;
+}
+
+/* Launch button */
+.launch-btn {
+    position: relative;
+    isolation: isolate;
+    border: 0;
+    cursor: pointer;
+    padding: 1rem 2.75rem;
+    border-radius: 999px;
+    color: #061018;
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #26d07c 0%, #00b5e2 100%);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.18),
+        0 14px 36px rgba(0, 181, 226, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.launch-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.28),
+        0 18px 42px rgba(38, 208, 124, 0.4);
+}
+
+.launch-btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.launch-btn:disabled {
+    opacity: 0.55;
+    cursor: wait;
+    transform: none;
+}
+
+.launch-btn__glow {
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgba(38, 208, 124, 0.55), rgba(0, 181, 226, 0.55));
+    z-index: -1;
+    filter: blur(14px);
+    opacity: 0.75;
+    animation: launch-pulse 2s ease-in-out infinite;
+}
+
+@keyframes launch-pulse {
+    0%,
+    100% {
+        opacity: 0.45;
+        transform: scale(0.96);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.04);
+    }
+}
+
+.launch-btn__label {
+    position: relative;
+}
+
+.launch-stage.is-counting .launch-btn {
+    display: none;
+}
+
+/* Countdown */
+.launch-countdown {
+    display: grid;
+    place-items: center;
+    gap: 0.35rem;
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.launch-countdown[hidden] {
+    display: none;
+}
+
+.launch-countdown__ring {
+    position: absolute;
+    inset: 0;
+}
+
+.launch-countdown__ring svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.launch-countdown__track,
+.launch-countdown__progress {
+    fill: none;
+    stroke-width: 6;
+}
+
+.launch-countdown__track {
+    stroke: rgba(255, 255, 255, 0.16);
+}
+
+.launch-countdown__progress {
+    stroke: url(#countdownGradient);
+    stroke: #00b5e2;
+    stroke-linecap: round;
+    stroke-dasharray: 326.73;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.95s linear;
+    filter: drop-shadow(0 0 8px rgba(0, 181, 226, 0.55));
+}
+
+.launch-countdown__number {
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    animation: countdown-pop 0.45s ease both;
+}
+
+@keyframes countdown-pop {
+    from {
+        transform: scale(0.7);
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.launch-countdown__caption {
+    position: absolute;
+    bottom: -2rem;
+    margin: 0;
+    font-size: 0.82rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.launch-stage.is-redirecting {
+    animation: launch-fade-out 0.7s ease forwards;
+}
+
+@keyframes launch-fade-out {
+    to {
+        opacity: 0;
+        transform: scale(1.02);
+    }
+}
+
+@media (max-width: 640px) {
+    .launch-intro__copy {
+        font-size: 0.95rem;
+    }
+
+    .launch-btn {
+        padding: 0.9rem 2.2rem;
+        font-size: 0.95rem;
+    }
+}
