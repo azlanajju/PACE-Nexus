@@ -7,8 +7,8 @@ $site = [
     'short_name' => 'PACE NEXUS',
     'year' => '2027',
     'tagline' => 'International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems - 2027',
-    'dates' => '29 - 30 April 2027',
-    'dates_detail' => '(Thursday & Friday)',
+    'dates' => '24 - 25 September 2027',
+    'dates_detail' => '(Friday & Saturday)',
     'venue' => 'P. A. College of Engineering, Mangaluru, India',
     'location' => 'P. A. College of Engineering, Mangaluru, India - 574153, Karnataka, India.',
     'conference_record' => 'XXXX',
@@ -70,11 +70,11 @@ $navLinks = [
 ];
 
 $importantDates = [
-    ['label' => 'Paper Submission Deadline', 'date' => 'December 10, 2026'],
-    ['label' => 'Acceptance Notification', 'date' => 'February 20, 2027'],
-    ['label' => 'Registration Deadline', 'date' => 'March 20, 2027'],
-    ['label' => 'CRC Submission Deadline', 'date' => 'March 20, 2027'],
-    ['label' => 'Conference Dates', 'date' => 'April 29 - 30, 2027 (Thursday & Friday)'],
+    ['label' => 'Paper Submission Deadline', 'date' => 'May 10, 2027'],
+    ['label' => 'Acceptance Notification', 'date' => 'July 20, 2027'],
+    ['label' => 'Registration Deadline', 'date' => 'August 20, 2027'],
+    ['label' => 'CRC Submission Deadline', 'date' => 'August 20, 2027'],
+    ['label' => 'Conference Dates', 'date' => 'September 24-25, 2027 (Friday & Saturday)'],
 ];
 
 $organizingChairs = [
