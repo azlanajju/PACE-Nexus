@@ -308,7 +308,7 @@ $intelexSolutions = [
     'tagline' => 'Premium software development services in Mangalore.',
     'description' => 'Web development, mobile apps, AI integration, cloud solutions, and digital services for businesses worldwide.',
     'logo' => 'Assets/Images/IntelexSolutions.png',
-    'website' => 'http://intelexsolutions.co.in/',
+    'website' => 'https://intelexsolutions.in/',
     'email' => 'info@intelexsolutions.in',
     'phones' => [
         // '+91 9972826383',

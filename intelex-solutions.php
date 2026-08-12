@@ -48,16 +48,16 @@ require __DIR__ . '/Components/Head.php';
                 <span class="intelex-page__label">Location</span>
                 <span><?= htmlspecialchars($intelexSolutions['location'], ENT_QUOTES, 'UTF-8') ?></span>
             </li>
-            <!-- <li>
+            <li>
                 <span class="intelex-page__label">Website</span>
                 <a
                     href="<?= htmlspecialchars($intelexSolutions['website'], ENT_QUOTES, 'UTF-8') ?>"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    intelexsolutions.co.in
+                    intelexsolutions.in
                 </a>
-            </li> -->
+            </li>
         </ul>
 
         <!-- <a
