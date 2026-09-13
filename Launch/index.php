@@ -75,7 +75,7 @@ require dirname(__DIR__) . '/Components/Head.php';
 
     <div class="launch-intro" id="launchIntro">
         <img
-            src="<?= asset_url('Assets/Images/pacenexuslogo_white.png') ?>"
+            src="<?= asset_url('Assets/Images/pacenexuslogo_dark.png') ?>"
             alt="<?= htmlspecialchars($site['short_name'], ENT_QUOTES, 'UTF-8') ?>"
             class="launch-intro__logo"
             width="260"
