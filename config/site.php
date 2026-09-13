@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 $site = [
-    'name' => 'PACE NEXUS 2027',
-    'short_name' => 'PACE NEXUS',
+    'name' => 'PACE IEEE NEXUS 2027',
+    'short_name' => 'PACE IEEE NEXUS',
     'year' => '2027',
     'tagline' => 'International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems - 2027',
     'dates' => '24 - 25 September 2027',
@@ -33,10 +33,10 @@ $footerContacts = [
 $defaultPeopleImage = 'Assets/Images/default-people.png';
 
 $welcomeMessage = [
-    'title' => 'Welcome to PACE NEXUS 2027',
+    'title' => 'Welcome to PACE IEEE NEXUS 2027',
     'paragraphs' => [
-        'PACE NEXUS 2027 is a premier international conference dedicated to advancing research and innovation in next-generation technologies, sustainable engineering, and intelligent systems. The conference aims to provide a dynamic platform for researchers, academicians, industry professionals, innovators, and students to exchange ideas, present cutting-edge research, and foster interdisciplinary collaborations.',
-        'The conference emphasizes emerging technologies that address global challenges related to sustainability, clean energy, digital transformation, smart infrastructure, healthcare, and industrial innovation. Through keynote lectures, technical sessions, panel discussions, and networking opportunities, PACE NEXUS 2027 seeks to inspire transformative solutions for a sustainable and technologically advanced future.',
+        'PACE IEEE NEXUS 2027 is a premier international conference dedicated to advancing research and innovation in next-generation technologies, sustainable engineering, and intelligent systems. The conference aims to provide a dynamic platform for researchers, academicians, industry professionals, innovators, and students to exchange ideas, present cutting-edge research, and foster interdisciplinary collaborations.',
+        'The conference emphasizes emerging technologies that address global challenges related to sustainability, clean energy, digital transformation, smart infrastructure, healthcare, and industrial innovation. Through keynote lectures, technical sessions, panel discussions, and networking opportunities, PACE IEEE NEXUS 2027 seeks to inspire transformative solutions for a sustainable and technologically advanced future.',
     ],
 ];
 
@@ -70,8 +70,9 @@ $navLinks = [
 ];
 
 $importantDates = [
+    ['label' => 'Abstract Submission Deadline', 'date' => 'April 30, 2027'],
     ['label' => 'Paper Submission Deadline', 'date' => 'May 10, 2027'],
-    ['label' => 'Acceptance Notification', 'date' => 'July 20, 2027'],
+    ['label' => 'Acceptance Notification', 'date' => 'July 10, 2027'],
     ['label' => 'Registration Deadline', 'date' => 'August 20, 2027'],
     ['label' => 'CRC Submission Deadline', 'date' => 'August 20, 2027'],
     ['label' => 'Conference Dates', 'date' => 'September 24-25, 2027 (Friday & Saturday)'],

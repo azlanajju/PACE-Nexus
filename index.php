@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config/site.php';
 
 $pageTitle = $site['name'];
-$pageDescription = 'PACE NEXUS 2027 - International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems at P. A. College of Engineering, Mangaluru.';
+$pageDescription = 'PACE IEEE NEXUS 2027 - International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems at P. A. College of Engineering, Mangaluru.';
 $bodyClass = 'page-home';
 
 require __DIR__ . '/Components/Head.php';

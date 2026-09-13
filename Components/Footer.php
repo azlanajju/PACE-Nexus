@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-$footerAbout = 'PACE NEXUS, initiated by P. A. College of Engineering, unites academia, industry, and research through international conferences. The conference focuses on next-generation technologies for energy, sustainability, and smart systems.';
+$footerAbout = 'PACE IEEE NEXUS, initiated by P. A. College of Engineering, unites academia, industry, and research through international conferences. The conference focuses on next-generation technologies for energy, sustainability, and smart systems.';
 ?>
 <footer class="site-footer">
     <div class="container footer__grid">
