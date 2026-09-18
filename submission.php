@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config/site.php';
 
 $pageTitle = 'Paper Submission';
-$pageDescription = 'Paper Submission Guidelines - PACE IEEE NEXUS 2027';
+$pageDescription = 'Paper Submission Guidelines - PACE NEXUS 2027';
 $bodyClass = 'page-submission';
 
 require __DIR__ . '/Components/Head.php';

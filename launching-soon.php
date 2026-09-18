@@ -17,7 +17,7 @@ require __DIR__ . '/Components/Head.php';
 
     <main class="launching-soon__content">
         <img
-            src="<?= asset_url('Assets/Images/pacenexuslogo_dark.png') ?>"
+            src="<?= asset_url('Assets/Images/pacenexuslogo_dark_1.png') ?>"
             alt="<?= htmlspecialchars($site['short_name'], ENT_QUOTES, 'UTF-8') ?>"
             class="launching-soon__logo"
             width="280"

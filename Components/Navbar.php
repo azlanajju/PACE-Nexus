@@ -9,12 +9,12 @@ $isHome = ($bodyClass ?? '') === 'page-home';
         <div class="navbar__inner">
             <a href="<?= page_url('index.php') ?>" class="navbar__brand" aria-label="<?= htmlspecialchars($site['short_name'], ENT_QUOTES, 'UTF-8') ?> home">
                 <img
-                    src="<?= asset_url('Assets/Images/pacenexuslogo_white.png') ?>"
+                    src="<?= asset_url('Assets/Images/pacenexuslogo_white_1.png') ?>"
                     alt="<?= htmlspecialchars($site['short_name'], ENT_QUOTES, 'UTF-8') ?> logo"
                     class="navbar__logo navbar__logo--dark"
                 >
                 <img
-                    src="<?= asset_url('Assets/Images/pacenexuslogo_dark.png') ?>"
+                    src="<?= asset_url('Assets/Images/pacenexuslogo_dark_1.png') ?>"
                     alt=""
                     class="navbar__logo navbar__logo--light"
                     aria-hidden="true"

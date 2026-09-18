@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config/site.php';
 
 $pageTitle = $site['name'];
-$pageDescription = 'PACE IEEE NEXUS 2027 - International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems at P. A. College of Engineering, Mangaluru.';
+$pageDescription = 'PACE NEXUS 2027 - International Conference on Next-Generation Technologies for Energy, Sustainability and Smart Systems at P. A. College of Engineering, Mangaluru.';
 $bodyClass = 'page-home';
 
 require __DIR__ . '/Components/Head.php';
@@ -33,7 +33,7 @@ require __DIR__ . '/Components/Hero.php';
                 <div class="about-showcase__brand">
                     <div class="about-logo-card">
                         <img
-                            src="<?= asset_url('Assets/Images/pacenexuslogo_white.png') ?>"
+                            src="<?= asset_url('Assets/Images/pacenexuslogo_white_1.png') ?>"
                             alt="<?= htmlspecialchars($site['short_name'], ENT_QUOTES, 'UTF-8') ?>"
                             class="about-logo-card__image"
                             width="320"

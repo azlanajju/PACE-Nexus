@@ -20,7 +20,7 @@ declare(strict_types=1);
 
     <div class="hero__content container">
         <img
-            src="<?= asset_url('Assets/Images/pacenexuslogo_dark.png') ?>"
+            src="<?= asset_url('Assets/Images/pacenexuslogo_dark_1.png') ?>"
             alt="<?= htmlspecialchars($site['short_name'], ENT_QUOTES, 'UTF-8') ?>"
             class="hero__logo"
             width="220"
